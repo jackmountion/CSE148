@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Letterbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Paper Letterbox</h1>
+        <p>Submit and keep track of academic papers.</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Add New Paper</h2>
+            <form id="paper-form">
+                <label>
+                    Title:
+                    <input type="text" id="paper-title" required>
+                </label>
+                <label>
+                    Authors:
+                    <input type="text" id="paper-authors" required>
+                </label>
+                <label>
+                    PDF File:
+                    <input type="file" id="paper-file" accept="application/pdf" required>
+                </label>
+                <button type="submit">Add Paper</button>
+            </form>
+        </section>
+
+        <section id="list-section">
+            <h2>Stored Papers</h2>
+            <ul id="paper-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paper Letterbox</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
